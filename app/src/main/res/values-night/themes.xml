@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RebuildGameOutOfAPK" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <!-- Survive Game Theme -->
+    <style name="Theme.SurviveGame" parent="Base.Theme.RebuildGameOutOfAPK">
+        <!-- Theme colors -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+    </style>
+
+</resources>
