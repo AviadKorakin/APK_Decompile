@@ -49,13 +49,21 @@ I:
   \resources\res\values
   ```
 - Placed the URL string into the `strings.xml` file in the Android Studio project.
-- Removed the invisible character present in the string.
+- Removed the invisible character present in the string (as shown in the uploaded image).
 
 ### 7. Running the Game and Understanding the Logic
 After setting up the project, I ran the game and explored its logic. The game generates a sequence based on the provided ID. By entering the correct sequence of arrow clicks, I was able to complete the game with the result:
 ```
 Survived in Illinois.
 ```
+The code processes each character of the ID as follows:
+
+  - Converts the character to an integer.
+    - Takes the integer modulo 4 (`% 4`) to generate the direction:
+      - `0` = **Left** (`game_BTN_left`)
+      - `1` = **Right** (`game_BTN_right`)
+      - `2` = **Up** (`game_BTN_up`)
+      - `3` = **Down** (`game_BTN_down`)
 
 ---
 
